@@ -1,0 +1,1 @@
+This is an aggregated quality control (QC) report created with multiQC. It aggregates summary statistics, quality measures and visualizations from FastQC, Samtools stats and mosdepth for all provided samples.

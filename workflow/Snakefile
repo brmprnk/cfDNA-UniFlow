@@ -1,0 +1,26 @@
+# The main entry point of your workflow.
+# After configuring, running snakemake -n in a clone of this repository should successfully execute a dry-run of the workflow.
+
+
+report: "report/workflow.rst"
+
+
+include: "rules/common.smk"
+include: "rules/reference.smk"
+include: "rules/bam_to_fastq.smk"
+include: "rules/trimming.smk"
+include: "rules/filtering.smk"
+include: "rules/mapping.smk"
+include: "rules/ichorCNA.smk"
+include: "rules/GC_bias.smk"
+include: "rules/extract_signals.smk"
+include: "rules/QualityControl.smk"
+
+
+# The first rule should define the default target files
+# Subsequent target rules can be specified below. They should start with all_*.
+
+
+rule all:
+    input:
+        get_final_output(),
