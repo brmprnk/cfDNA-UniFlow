@@ -32,7 +32,7 @@ rule bwa_mem2_index:
         "../envs/cfDNA_prep.yaml"
     threads: 16
     shell:
-        "bwa-mem2 index {input.ref} 2> {log}"
+        "bwa-mem index {input.ref} 2> {log}"
 
 
 rule get_trimmomatic_adapters:
