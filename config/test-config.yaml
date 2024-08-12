@@ -17,7 +17,7 @@ hg19:
   effectiveGenomeSize: 2864785220 #for more details see https://deeptools.readthedocs.io/en/latest/content/feature/effectiveGenomeSize.html
 
 hg38:
-  reference: "/home/ubartu/FrEIA/hg38_bwa_reference/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna" #path to reference genome in fasta format
+  reference: "/media/ubartu/second_storage/frags_data/stein_manu/bwa_ref/hg38.analysisSet.fa" #path to reference genome in fasta format
   2bit_ref: "/media/ubartu/second_storage/frags_data/reference_genomes/hg38.2bit" #path to reference genome in twobit format
   repeatmasker: "resources/blacklists/repeatmasker.hg38.merged.bed.gz" #for more details see file location
   effectiveGenomeSize: 2913022398 #for more details see https://deeptools.readthedocs.io/en/latest/content/feature/effectiveGenomeSize.html
